@@ -1,11 +1,11 @@
 export default {
-    LOGIN: 'Login',
-    REGISTER: 'Register',
-    FORGOT_PASSWORD: 'Forgot Password',
+  LOGIN: "Login",
+  REGISTER: "Register",
+  FORGOT_PASSWORD: "Forgot Password",
 
-    HOME: 'Home',
-    CATEGORIES: 'Category',
-    CART: 'Cart',
-    MESSAGE: 'Message',
-    PROFILE: 'My Profile'
+  HOME: "Home",
+  CATEGORIES: "Categories",
+  ADD_ITEMS: "Add Items",
+  FEEDBACK: "Feedbacks",
+  PROFILE: "My Profile",
 };

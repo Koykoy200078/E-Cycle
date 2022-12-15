@@ -34,8 +34,25 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     width: "80%",
-    marginVertical: 10,
+    marginVertical: 2,
     backgroundColor: "#74CF7F",
+  },
+  container_CUSTOM2: {
+    justifyContent: "flex-end",
+    alignItems: "flex-end",
+    width: "40%",
+    height: 10,
+    // marginVertical: 10,
+  },
+  container_CUSTOM3: {
+    justifyContent: "center",
+    alignItems: "center",
+    width: "100%",
+    height: 20,
+    borderRadius: 10,
+    marginTop: 5,
+    marginVertical: 10,
+    borderWidth: 1,
   },
   text: {
     fontWeight: "bold",
@@ -44,5 +61,24 @@ const styles = StyleSheet.create({
   text_TERTIARY: {
     fontWeight: "bold",
     color: "gray",
+  },
+
+  text_CUSTOM2: {
+    fontWeight: "bold",
+    color: "gray",
+    fontSize: 15,
+    height: 30,
+    // marginBottom: -10,
+    borderWidth: 2,
+    // alignItems: "center",
+    // justifyContent: "center",
+  },
+  text_CUSTOM3: {
+    fontWeight: "bold",
+    color: "gray",
+    width: "60%",
+    height: 20,
+    alignItems: "center",
+    justifyContent: "center",
   },
 });

@@ -1,28 +1,18 @@
+import "react-native-gesture-handler";
 import { StatusBar } from "expo-status-bar";
 import { ImageBackground, StyleSheet, Text, View } from "react-native";
 import IMGS from "./src/constants/imgs";
 import Login from "./src/screens/auth/Login";
+import Home from "./src/screens/Home";
+import Profile from "./src/screens/Profile";
+import AppNavigation from "./src/navigations/AppNavigation";
+import { AuthProvider } from "./src/context/AuthContext";
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <AuthProvider>
       <StatusBar style="auto" />
-      <ImageBackground source={IMGS.bg} style={styles.rootBg}>
-        <Login />
-      </ImageBackground>
-    </View>
+      <AppNavigation />
+    </AuthProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  rootBg: {
-    width: "100%",
-    height: "100%",
-  },
-});
